@@ -11,7 +11,7 @@ int check_cycle(listint_t *list)
 {
     listint_t *mainp = list;
     listint_t *skipp = list;
-    bool exit_condition = true;
+    bool exit = true;
 
     if (list == NULL)
         return (0);
