@@ -3,7 +3,6 @@ def print_list_integer(my_list=[]):
     """
     Args:
         my_list: list of integers
-
     Return:
         No return
     """
