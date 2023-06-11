@@ -6,4 +6,4 @@ def print_list_integer(my_list=[]):
     Return:
         No return
     """
-    print(*["{:d}".format(i) for i in my_list], sep="\n")
+    print(*["{:d}\n".format(i) for i in my_list], sep="", end="")
