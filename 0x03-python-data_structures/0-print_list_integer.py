@@ -7,4 +7,4 @@ def print_list_integer(my_list=[]):
     Return:
         No return
     """
-    print(*["{}}".format(i) for i in my_list], sep="\n")
+    print(*["{}".format(i) for i in my_list], sep="\n")
