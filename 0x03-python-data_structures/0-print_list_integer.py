@@ -1,3 +1,10 @@
 #!/usr/bin/python3
 def print_list_integer(my_list=[]):
-    print(*["{}".format(i) for i in my_list], sep="\n")
+    """
+    Args:
+        my_list: list of integers
+
+    Return:
+        No return
+    """
+    print(*["{}}".format(i) for i in my_list], sep="\n")
