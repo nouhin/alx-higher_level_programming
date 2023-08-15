@@ -159,3 +159,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 0x00-python-hello_world/test.py
+0x00-python-hello_world/.vscode/settings.json
