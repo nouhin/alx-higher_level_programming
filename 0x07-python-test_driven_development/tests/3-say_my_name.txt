@@ -1,7 +1,7 @@
 ::
 
     >>> say_my_name = __import__('3-say_my_name').say_my_name
-    >>> say_my_name("kitty", "Cat")
+    >>> say_my_name("Kitty", "Cat")
     My name is Kitty Cat
 
 :: 
@@ -14,4 +14,4 @@
 
     >>> say_my_name("Ethan", 3)
     Traceback (most recent call last):
-    TypeError: first_name must be a string
+    TypeError: last_name must be a string
