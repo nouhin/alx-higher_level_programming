@@ -1,22 +1,13 @@
 #!/usr/bin/python3
 def add_integer(a, b=98):
     """
-    >>> add_integer(2, 3)
-    5
+    Returns the sum of a and b
     """
-    try :
-        isinstance(a, (int, float))
-        if isinstance(a, float):
-            a = int(a)
-    except TypeError:
-        print("a must be an integer")
-    try :
-        isinstance(b, (int, float))
-        if isinstance(b, float):
-            b = int(b)
-    except TypeError:
-        print("b must be an integer")
-    return a + b
+    if not isinstance(a, (int, float)):
+        raise TypeError("a must be an integer")
+    if not isinstance(b, (int, float)):
+        raise TypeError("b must be an integer")
+    return int(a) + int(b)
         
         
     
