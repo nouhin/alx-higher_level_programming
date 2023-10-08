@@ -2,14 +2,36 @@
 ::
 
     >>> add_integer = __import__('0-add_integer').add_integer
-
     >>> add_integer(1,2)
     3
 
 It also works with negative numbers.
+::
+
+    >>> add_integer(100, -2)
+    98
+
+The default value for the second argument is 98.
+::
+
+    >>> add_integer(100)
+    198
+    
+If a float is passed as argument, it will be typecasted into an integer.
+::
+
+    >>> add_integer(1.0, 2.0)
+    3
+
+If the arguments are not integers of floats, the function raises a TypeError exception with the message a must be an integer and b must be an integer.
+::
+
+    >>> add_integer(1.0, None)
+    Traceback (most recent call last):
+    TypeError: b must be an integer
 
 ::
 
-    >>> add_integer = __import__('0-add_integer').add_integer
-    >>> add_integer(100, -2)
-    -4
+    >>> add_integer(None, 2)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
