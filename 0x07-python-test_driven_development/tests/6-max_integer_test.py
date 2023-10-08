@@ -18,6 +18,16 @@ class TestMaxInteger(unittest.TestCase):
         list = [1]
         self.assertEqual(max_integer(list), list[0])
 
+    def test_ascending_ordered_list(self):
+        """Test with ascending ordered list"""
+        list = [1, 2, 3]
+        self.assertEqual(max_integer(list), list[-1])
+
+    def test_descending_ordered_list(self):
+        """Test with ascending ordered list"""
+        list = [3, 2, 1]
+        self.assertEqual(max_integer(list), list[0])
+
 
 if __name__ == '__main__':
     unittest.main()
