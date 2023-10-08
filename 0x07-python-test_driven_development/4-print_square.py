@@ -8,4 +8,4 @@ def print_square(size):
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >=0")
-    print(("#" * size + "\n") * size)
+    print(("#" * size + "\n") * size, end="")
