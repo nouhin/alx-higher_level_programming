@@ -8,11 +8,9 @@ def safe_print_integer(value):
     Args:
         value (int): integer to print
     """
-    is_integer = False
     try:
         print("{:d}".format(value))
-        is_integer = True
+        return True
     except Exception as err:
         print(f"Unexpecetd {err}")
-        is_integer = False
-    return is_integer
+        return False
