@@ -1,8 +1,11 @@
 {
-    "python.formatting.provider": "autopep8",
-    "python.linting.pycodestyleArgs": [],
-    "python.linting.enabled": true,
     "python.linting.pycodestyleEnabled": true,
-    "python.linting.lintOnSave": true,
-    "editor.formatOnSave": true,
+    // yapf arguments
+    "yapf.args": [
+        "--style",
+        "{based_on_style: pep8}",
+    ],
+    "editor.rulers": [
+        79
+    ],
 }

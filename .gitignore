@@ -160,3 +160,6 @@ cython_debug/
 #.idea/
 0x00-python-hello_world/test.py
 0x00-python-hello_world/.vscode/settings.json
+.vscode/settings.json
+.gitignore
+0x07-python-test_driven_development/main.py
