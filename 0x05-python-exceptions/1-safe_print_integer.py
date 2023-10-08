@@ -14,4 +14,5 @@ def safe_print_integer(value):
         is_integer = True
     except Exception as err:
         print(f"Unexpecetd {err}")
+        is_integer = False
     return is_integer
