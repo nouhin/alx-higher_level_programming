@@ -5,11 +5,14 @@
 
 
 def matrix_divided(matrix, div):
-    """Function devides all elements in matrix by div
+    """This function divides all elements of a matrix by a given number.
+
     Args:
-        matrix (list): list of lists of integers or floats representing a
-            matrix
-        div (int/float): number
+        matrix (list): A list of lists of integers or floats.
+        div (int/float): The number to divide each element of the matrix by.
+
+    Returns:
+        list: A new matrix with the results of the division.
     """
     matrix_out = []
     if not isinstance(div, (int, float)):
