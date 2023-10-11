@@ -8,5 +8,5 @@ def append_write(filename="", text=""):
         raise ValueError("filename must a non empty string")
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    with open(filename, 'a', encoding='utf-8') as f:
+    with open(filename, 'a+', encoding='utf-8') as f:
         return f.write(text)
