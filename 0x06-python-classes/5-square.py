@@ -34,6 +34,6 @@ class Square:
         """Displays a square to stdout"""
         if self.size > 0:
             nline = '\n'
-            print(f"{('#'*self.__size + nline)*self.__size}")
+            print(f"{('#'*self.__size + nline)*self.__size}", end='')
         else:
             print()
