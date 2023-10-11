@@ -7,6 +7,10 @@ def read_file(filename=""):
     Args:
         filename: name of the file
     """
+    if not isinstance(filename, str):
+        raise TypeError("filename must be a string")
+    if filename == "" or filename is None:
+        raise ValueError("filename is empty")
     with open(filename, encoding='utf-8') as f:
         data = f.read()
     print(data)
